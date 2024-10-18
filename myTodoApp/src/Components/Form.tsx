@@ -1,6 +1,18 @@
-function Form() {
+
+
+function Form({ setTodos }: FormProps) {
     const handleSubmit = (event:React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
+      const inputElement = event.currentTarget.elements.namedItem('todo') as HTMLInputElement;
+    const newTodoTitle = inputElement.value;
+    setTodos((prevTodos) => [
+      ...prevTodos,
+      {
+        id: value,
+        title: newTodoTitle,
+        completed: false,
+      },
+    ]);
       // reset the form
       event.currentTarget.reset();
       
@@ -24,3 +36,6 @@ function Form() {
     );
   }
   export default Form;
+  type FormProps = {
+    setTodos: React.Dispatch<React.SetStateAction<{ id: string; title: string; completed: boolean }[]>>;
+  };
