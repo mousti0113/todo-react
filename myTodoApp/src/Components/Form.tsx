@@ -18,9 +18,7 @@ function Form() {
         </label>
         <button>
           <span className="visually-hidden">Submit</span>
-          <svg>
-            <path d="" />
-          </svg>
+          
         </button>
       </form>
     );

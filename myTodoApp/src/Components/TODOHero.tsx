@@ -1,4 +1,10 @@
-function TODOHero(nums_todos_completati:number,num_totale_todo:number){
+
+type TODOHeroProps = {
+    nums_todos_completati:number;
+    num_totale_todo:number;
+}
+
+function TODOHero({nums_todos_completati,num_totale_todo}:TODOHeroProps){
 return(
     <section>
       <div>
