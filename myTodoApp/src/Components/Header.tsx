@@ -1,12 +1,13 @@
+import { ListTodo } from 'lucide-react';
 function Header(){
 return(
-    <>
-     <svg width="100" height="100">
-  <image href="https://static-00.iconduck.com/assets.00/todo-icon-1024x1024-7nszgsj6.png" width="100" height="100" />
-</svg>
-  <h1>Todo</h1>
-    </>
-   
-)
+  <header className="flex items-center justify-center bg-blue-100 h-20">
+      <div className="flex items-center justify-center bg-blue-300 rounded-full p-4 gap-2" >
+        ToDoList
+        <ListTodo className="text-blue-700 h-10 w-10" />
+      </div>
+    </header>
+);
+
 }
 export default Header
