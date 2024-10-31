@@ -1,23 +1,19 @@
 import "./App.css";
 import Header from "./Components/Header";
+import Boh from "./Components/Boh"
 
 ("use client");
 import React from "react";
 
 function App() {
-  const [todos, setTodos] = React.useState([
-    { title: "Some task", id: self.crypto.randomUUID(), is_completed: false },
-    {
-      title: "Some other task",
-      id: self.crypto.randomUUID(),
-      is_completed: true,
-    },
-    { title: "last task", id: self.crypto.randomUUID(), is_completed: false },
-  ]);
+  let testo = "ciao";
+  let vettore = ['a', 'b', 'c'];
+  
   return (
     <>
+      <Boh text={testo} vet={vettore} />
       <Header />
-     </>
+    </>
   );
 }
 
