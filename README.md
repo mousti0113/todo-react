@@ -28,4 +28,7 @@ module.exports = {
 npm install lucide-react
 ```
 
-
+##installare react-hot-toast
+```bash
+npm install react-hot-toast
+```
