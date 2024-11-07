@@ -6,7 +6,7 @@ type TaskListProps = {
   filter: Filter;
   onToggleTask: (id: string) => void;
   onDeleteTask: (id: string) => void;
-  darkMode: boolean; // Aggiungi prop per il dark mode
+  darkMode: boolean; 
 };
 
 export const TaskList = ({ 
