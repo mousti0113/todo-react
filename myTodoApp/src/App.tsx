@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Task, Filter } from "./Components/types";
 import { TaskForm } from "./Components/TaskForm";
 import { TaskList } from "./Components/TaskList";
